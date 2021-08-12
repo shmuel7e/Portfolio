@@ -1,0 +1,52 @@
+.container {
+  position: absolute;
+  bottom: 0;
+  writing-mode: vertical-rl;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txt {
+  font-size: 14px !important;
+  font-family: "La Sans";
+  color: #fff;
+  padding: 4px;
+  z-index: 999;
+  animation: bounce 1.4s infinite ease;
+}
+
+.right {
+  right: 10px;
+}
+
+.left {
+  left: 10px;
+}
+
+.arrow {
+  margin-right: 3px;
+  margin-top: 5px;
+  padding: 5px;
+  color: #fff;
+  font-size: 14px;
+  transform: translate(0, -3px);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0, 3px);
+  }
+  25% {
+    transform: translate(0, -3px);
+  }
+  50% {
+    transform: translate(0, 3px);
+  }
+  75% {
+    transform: translate(0, -3px);
+  }
+  to {
+    transform: translate(0, 3px);
+  }
+}

@@ -1,6 +1,8 @@
 import React, { Suspense, useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import Wrapper from "../wrapper";
+import Scroll from "../scroll";
+
 const AnimatedTitle = React.lazy(() => import("../animatedTitle"));
 const SubTitle = React.lazy(() => import("../subtitle"));
 const Button = React.lazy(() => import("../button"));
@@ -19,6 +21,8 @@ const Intro = () => {
   return (
     shouldDisplay && (
       <section className={styles.intro}>
+        <Scroll direction={"right"} />
+        <Scroll direction={"left"} />
         <Wrapper tag={"h1"}>
           {
             <Suspense fallback={<div style={{ minHeight: "157px" }}></div>}>
