@@ -1,6 +1,6 @@
 .container {
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   writing-mode: vertical-rl;
   display: flex;
   align-items: center;
@@ -9,7 +9,7 @@
 
 .txt {
   font-size: 13px;
-  font-family: "La Sans";
+  font-family: "La Sans", sans-serif;
   color: #fff;
   padding: 4px;
   z-index: 999;

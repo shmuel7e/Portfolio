@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import styles from "./styles.module.scss";
 import Wrapper from "../cmps/wrapper";
 import Spinner from "../cmps/spinner";
+import MyPortfolio from "../cmps/myPortfolio";
 const Intro = React.lazy(() => import("../cmps/into"));
 
 const Home = () => (
@@ -19,6 +20,7 @@ const Home = () => (
                 }
               >
                 <Intro />
+                <MyPortfolio />
               </Suspense>
             </div>
           }
