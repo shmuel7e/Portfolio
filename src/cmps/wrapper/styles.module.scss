@@ -1,0 +1,17 @@
+.tag {
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+  font-size: 18px;
+  margin-left: 10px;
+  user-select: none;
+  @media (max-width: 500px) {
+    margin: 0;
+  }
+}
+
+.content {
+  margin-left: 30px;
+  @media (max-width: 500px) {
+    margin-left: 3px;
+  }
+}

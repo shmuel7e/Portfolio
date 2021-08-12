@@ -1,0 +1,25 @@
+.home {
+  height: 100%;
+  padding: 10px 20px;
+  @media (max-width: 780px) {
+    padding: 0;
+  }
+}
+
+.spinner {
+  min-height: 527px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 50%;
+  }
+}
+
+.html {
+  min-height: 593px;
+}
+
+.body {
+  min-height: 527px;
+}
