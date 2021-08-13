@@ -22,7 +22,7 @@ const Intro = () => {
       <Scroll direction={"left"} />
       <Wrapper tag={"h1"}>
         {
-          <Suspense fallback={<div style={{ minHeight: "123px" }}></div>}>
+          <Suspense fallback={<div style={{ minHeight: "106px" }}></div>}>
             <AnimatedTitle />
           </Suspense>
         }
