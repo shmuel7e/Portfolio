@@ -9,3 +9,9 @@ body {
 .App {
   overflow-x: hidden;
 }
+
+a{
+  text-decoration: none;
+  outline:none;
+  user-select: none;
+}
