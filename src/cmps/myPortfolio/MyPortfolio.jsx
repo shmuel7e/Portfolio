@@ -52,13 +52,13 @@ const MyPortfolio = () => {
       </Wrapper>
       <Wrapper tag={"p"}>
         <div className={styles.profileTxt}>
-          <span>Experienced Full Stack Engineer. </span>
+          <span>Experienced Full Stack Web Engineer B.Sc. </span>
           <span> adept in all stages of web development.</span>
           <span>
             Knowledgeable in user interface, testing and debugging processes.
           </span>
           <span>
-            Able to effectively self-manage during independent projects, as well
+            Able to effectively self - manage during independent projects, as well
             as collaborate in a team setting.
           </span>
         </div>
