@@ -60,7 +60,8 @@
     max-height: 306px;
     width: 50%;
     @media (max-width: 500px) {
-      max-height: 247px;
+      max-height: 180px;
+      min-width: 180px;
     }
     img {
       width: 100%;
