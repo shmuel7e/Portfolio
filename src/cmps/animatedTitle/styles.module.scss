@@ -40,11 +40,11 @@
 .special {
   display: flex;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 12px;
   position: relative;
+  margin-left:37px;
   img {
     width: 53px;
-    animation: rotate 0.2s linear;
     position: absolute;
     left: -62px;
     top: -2px;
@@ -54,31 +54,9 @@
       top: -5px;
     }
   }
-  @media (max-width: 780px) {
-    margin-left: 39px;
-  }
 }
 
 .specialContainer {
   align-items: center;
   display: flex;
-}
-
-@keyframes rotate {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    transform: rotate(-120deg);
-  }
-  50% {
-    opacity: 0;
-    transform: rotate(-70deg);
-  }
-  75% {
-    transform: rotate(-55deg);
-  }
-  100% {
-    opacity: 1;
-  }
 }

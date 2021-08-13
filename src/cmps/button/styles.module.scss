@@ -1,6 +1,6 @@
 .button {
   user-select: none;
-  color: #c3073f;
+  color: #cca8a8 ;
   letter-spacing: 4px;
   font-family: Sekiro, sans-serif;
   text-decoration: none;
@@ -13,7 +13,7 @@
   line-height: 50px;
   display: block;
   text-align: center;
-  border: 1px solid #c3073f;
+  border: 1px solid #cca8a8 ;
   cursor: pointer;
   letter-spacing: 3px;
   font-size: 14px;
@@ -29,6 +29,6 @@
 
 .button:hover {
   transition: ease 0.5s all;
-  background: #c3073f;
+  background: #cca8a8 ;
   color: black;
 }

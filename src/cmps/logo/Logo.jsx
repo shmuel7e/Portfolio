@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import LogoImage from "../../assets/logo/logo.png";
-import LogoImageWhite from "../../assets/logo/logoWhite.png";
+import styles from "./styles.module.scss";
+
+const LogoImage = () => <div className={styles.logoStyle}>S</div>;
 
 const Logo = ({ delay, theme = "default", z }) => {
   const [isShown, setShown] = useState("none");
@@ -10,12 +11,9 @@ const Logo = ({ delay, theme = "default", z }) => {
     }, delay * 1600);
   }, [delay]);
   return (
-    <img
-      style={{ display: isShown, zIndex: z }}
-      src={theme === "default" ? LogoImageWhite : LogoImage}
-      alt="S"
-    ></img>
+    <span style={{ display: isShown, zIndex: z }}>
+      {theme === "default" ? <LogoImage /> : <LogoImage />}
+    </span>
   );
 };
-
 export default React.memo(Logo);

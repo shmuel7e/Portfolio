@@ -1,0 +1,28 @@
+.logoStyle {
+  font-family: Sekiro, sans-serif;
+  color: #cca8a8;
+  font-size: 52px !important;
+  position: absolute;
+  animation: rotate 0.2s linear;
+  top: -5px;
+  left: -23px;
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    transform: rotate(-120deg);
+  }
+  50% {
+    opacity: 0;
+    transform: rotate(-70deg);
+  }
+  75% {
+    transform: rotate(-55deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
