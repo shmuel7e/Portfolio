@@ -11,8 +11,7 @@ const AnimatedTitle = () => (
       <AnimatedLetter letter={","} delay={0.3} z={100} />
     </div>
     <div className={styles.specialContainer}>
-      <AnimatedLetter letter={"I"} delay={0.4} />
-      <AnimatedLetter letter={"'"} delay={0.5} left={2} z={100} />
+      <AnimatedLetter letter={"I'"} delay={0.4} />
       <AnimatedLetter letter={"m"} delay={0.6} z={80} />
       <span className={styles.special}>
         <Logo delay={0.45} z={100} />
