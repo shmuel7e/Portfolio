@@ -42,7 +42,7 @@ const Intro = () => {
         <div className={styles.p}>
           <Wrapper tag={"button"}>
             {
-              <Suspense fallback={<div style={{ minHeight: "40px" }}></div>}>
+              <Suspense fallback={<div style={{ minHeight: "35px" }}></div>}>
                 <Button />
               </Suspense>
             }
