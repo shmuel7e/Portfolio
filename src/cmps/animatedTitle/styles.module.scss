@@ -3,14 +3,14 @@
   color: rgb(255, 255, 255);
   font-size: 6rem;
   text-size-adjust: 100%;
-  font-family: Patua One, sans-serif;
+  font-family: Sekiro, sans-serif;
   box-sizing: border-box;
   line-height: 87px;
 
   @media (max-width: 780px) {
     font-size: 35px;
-    line-height: 35px;
-    min-height: 106px;
+    line-height: 30px;
+    min-height: 95px;
   }
   @media (max-width: 500px) {
     margin-left: 8px;
@@ -34,7 +34,7 @@
   display: flex;
   @media (max-width: 780px) {
     margin-top: 0;
-    margin-left: 15px;
+    margin-left: 14px;
   }
 }
 
@@ -50,13 +50,13 @@
     left: -62px;
     top: -2px;
     @media (max-width: 780px) {
-      width: 26px;
-      left: -30px;
-      top: -9px;
+      width: 20px;
+      left: -25px;
+      top: -5px;
     }
   }
   @media (max-width: 780px) {
-    margin-left: 52px;
+    margin-left: 39px;
   }
 }
 
