@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import Wrapper from "../cmps/wrapper";
 import Spinner from "../cmps/spinner";
 import MyPortfolio from "../cmps/myPortfolio";
+import About from "../cmps/about";
 const Intro = React.lazy(() => import("../cmps/into"));
 
 const Home = () => (
@@ -21,6 +22,7 @@ const Home = () => (
               >
                 <Intro />
                 <MyPortfolio />
+                <About />
               </Suspense>
             </div>
           }
