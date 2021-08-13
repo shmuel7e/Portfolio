@@ -13,14 +13,30 @@
   }
 }
 
-
 .profileTxt {
-    font-family: "La Sans", sans-serif;
-    line-height: 1.5;
-    font-size: 15px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    max-width: 700px;
-    margin-left: 7px;
-  }
+  font-family: "La Sans", sans-serif;
+  line-height: 1.5;
+  font-size: 15px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin-left: 7px;
+}
+
+.first {
+  display: flex;
+  margin-left: 7px;
+}
+
+.second {
+  display: flex;
+  margin-left: 10px;
+}
+
+.section {
+  color: #cca8a8;
+  font-size: 30px;
+  font-family: Sekiro, sans-serif;
+  display: flex;
+}

@@ -46,24 +46,7 @@ const MyPortfolio = () => {
           </div>
         </div>
       </Wrapper>
-      {/* <Wrapper tag={"img"}>
-        <div className={styles.profile}>
-          <img src={myProfile} alt=""></img>
-        </div>
-      </Wrapper> */}
-      {/* <Wrapper tag={"p"}>
-        <div className={styles.profileTxt}>
-          <span>Experienced Full Stack Web Engineer B.Sc. </span>
-          <span> adept in all stages of web development.</span>
-          <span>
-            Knowledgeable in user interface, testing and debugging processes.
-          </span>
-          <span>
-            Able to effectively self - manage during independent projects, as well
-            as collaborate in a team setting.
-          </span>
-        </div>
-      </Wrapper> */}
+
       <Wrapper tag={"p"}>
         <div className={styles.profileTxt}>
           A small gallery of recent projects.
