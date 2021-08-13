@@ -65,10 +65,10 @@ const MyPortfolio = () => {
       <div className={styles.portfolioContainer}>
         <Wrapper tag={"section"}>
           <div className={styles.portfolio}>
-            <img  onClick={()=>  window.location = "http://www.olyabridal.com" } src={olyaBridal} alt=""></img>
-            <img  onClick={()=>  window.location = "https://app-taskit.herokuapp.com/guest" }src={taskIt} alt=""></img>
-            <img  onClick={()=>  window.location = "https://shmuelmusicx.netlify.app/" } src={soundx} alt=""></img>
-            <img  onClick={()=>  window.location = "https://shmuelminesweeper.netlify.app/" } src={mines} alt=""></img>
+           <div> <img  onClick={()=>  window.location = "http://www.olyabridal.com" } src={olyaBridal} alt=""></img></div>
+          <div>  <img  onClick={()=>  window.location = "https://app-taskit.herokuapp.com/guest" }src={taskIt} alt=""></img></div>
+           <div> <img  onClick={()=>  window.location = "https://shmuelmusicx.netlify.app/" } src={soundx} alt=""></img></div>
+           <div> <img  onClick={()=>  window.location = "https://shmuelminesweeper.netlify.app/" } src={mines} alt=""></img></div>
           </div>
         </Wrapper>
       </div>
