@@ -60,23 +60,7 @@
       height: 100%;
     }
   }
-
   position: absolute;
-  @media (max-width: 500px) {
-    //   left: 0;
-    //   width: 100%;
-    //   display: flex;
-    //   flex-wrap: wrap;
-    //   justify-content: center;
-    //   align-items: center;
-    //   img {
-    //     width: 50%;
-    //     height: 202px;
-    //     object-fit: cover;
-    //     margin: auto;
-    //     display: block;
-    //   }
-  }
 }
 
 .portfolioContainer {
@@ -88,7 +72,7 @@
   @media (max-width: 500px) {
     > section {
       > div {
-        height: 600px;
+        height: 570px;
       }
     }
   }

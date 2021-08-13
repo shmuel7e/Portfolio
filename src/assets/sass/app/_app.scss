@@ -2,6 +2,10 @@
   background: #1d1d1d;
 }
 
-body{
+body {
+  overflow-x: hidden !important;
+}
+
+.App {
   overflow-x: hidden;
 }
