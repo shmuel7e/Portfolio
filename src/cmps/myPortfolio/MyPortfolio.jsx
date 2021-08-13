@@ -7,6 +7,7 @@ import olyaBridal from '../../assets/images/olyaBridal.PNG';
 import taskIt from '../../assets/images/taskIt.PNG';
 import mines from '../../assets/images/mines.PNG';
 import soundx from '../../assets/images/soundX.PNG';
+import weather from '../../assets/images/weather.PNG';
 
 // const isElementInViewport = (el) => {
 //   var rect = el.getBoundingClientRect();
@@ -69,6 +70,7 @@ const MyPortfolio = () => {
           <div>  <img  onClick={()=>  window.location = "https://app-taskit.herokuapp.com/guest" }src={taskIt} alt=""></img></div>
            <div> <img  onClick={()=>  window.location = "https://shmuelmusicx.netlify.app/" } src={soundx} alt=""></img></div>
            <div> <img  onClick={()=>  window.location = "https://shmuelminesweeper.netlify.app/" } src={mines} alt=""></img></div>
+           <div> <img  onClick={()=>  window.location = "https://shmuel7e.github.io/shmuel-elkis-27-11-2020" } src={weather} alt=""></img></div>
           </div>
         </Wrapper>
       </div>
