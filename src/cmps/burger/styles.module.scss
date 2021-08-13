@@ -1,0 +1,46 @@
+.navBurger {
+  z-index: 999 !important;
+  position: fixed;
+  user-select: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  padding: 3px;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  outline: none;
+  right: 0;
+  border-radius: 3px;
+  margin: 3px 10px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navBurger span {
+  background: #fff;
+  display: block;
+  height: 4px;
+  width: 2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: rotate(1turn);
+  transform: rotate(1turn);
+}
+
+.menuOpen {
+  span:first-child {
+    transform: rotate(45deg);
+    position: absolute;
+  }
+  span:nth-child(2) {
+    display: none;
+  }
+  span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+  }
+}

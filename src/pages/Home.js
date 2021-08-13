@@ -4,10 +4,12 @@ import Wrapper from "../cmps/wrapper";
 import Spinner from "../cmps/spinner";
 import MyPortfolio from "../cmps/myPortfolio";
 import About from "../cmps/about";
+import Burger from '../cmps/burger';
 const Intro = React.lazy(() => import("../cmps/into"));
 
 const Home = () => (
   <section className={styles.home}>
+    <Burger/>
     <Wrapper tag={"html"}>
       <div className={styles.html}>
         <Wrapper tag={"body"}>

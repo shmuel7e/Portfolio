@@ -5,7 +5,7 @@ import myProfile from "../../assets/images/profile.jpg";
 import AnimatedLetter from "../animatedLetter";
 
 const About = () => (
-  <section classNamee={styles.container}>
+  <section className={styles.container}>
     <Wrapper tag={"h2"}>
       <div className={styles.section}>
         <div className={styles.first}>
