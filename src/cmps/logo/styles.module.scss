@@ -16,16 +16,13 @@
 @keyframes rotate {
   0% {
     opacity: 0;
-  }
-  25% {
-    transform: rotate(-120deg);
-  }
-  50% {
-    opacity: 0;
     transform: rotate(-70deg);
+    top: -6px;
+    left: -41px;
   }
-  75% {
-    transform: rotate(-55deg);
+
+  50% {
+    transform: rotate(-35deg);
   }
   100% {
     opacity: 1;
