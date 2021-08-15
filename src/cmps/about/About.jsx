@@ -7,8 +7,8 @@ import Scroll from "../scroll";
 
 const About = () => (
   <section className={styles.container}>
-    <Scroll direction={"right"} bottom={"615px"} />
-    <Scroll direction={"left"} bottom={"615px"} />
+    <Scroll direction={"right"} bottom={"600px"} />
+    <Scroll direction={"left"} bottom={"600px"} />
     <Wrapper tag={"h2"}>
       <div className={styles.section}>
         <div className={styles.first}>

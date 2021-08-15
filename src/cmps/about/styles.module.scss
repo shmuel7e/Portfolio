@@ -1,4 +1,5 @@
 .profile {
+  margin-top:-10px;
   display: flex;
   align-items: center;
   width: 180px;
@@ -14,6 +15,7 @@
 }
 
 .profileTxt {
+  margin-top: -7px;
   font-family: "La Sans", sans-serif;
   line-height: 1.5;
   font-size: 15px;
@@ -35,6 +37,7 @@
 }
 
 .section {
+  margin-top: -7px;
   color: silver;
   font-size: 30px;
   font-family: Sekiro, sans-serif;
@@ -42,6 +45,6 @@
 }
 
 .container {
-  margin-top: 200px;
+  margin-top: 220px;
   position: relative;
 }
