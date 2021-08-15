@@ -21,7 +21,7 @@ const AnimatedTitle = () => (
         <AnimatedLetter letter={"u"} delay={1} />
         <AnimatedLetter letter={"e"} delay={1.1} />
         <AnimatedLetter letter={"l"} delay={1.2} />
-        <AnimatedLetter letter={","} delay={1.3} z={80} />
+        <AnimatedLetter letter={","} delay={1.3} left={-4} z={80} />
       </span>
     </div>
     <div className={styles.last}>
