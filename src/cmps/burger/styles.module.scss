@@ -3,17 +3,18 @@
   position: fixed;
   user-select: none;
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  padding: 3px;
+  padding: 5px;
   background: transparent;
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   outline: none;
+  justify-content: center;
   right: 0;
   border-radius: 3px;
+  gap: 6.2px;
   margin: 3px 10px;
   width: 50px;
   height: 50px;
@@ -21,10 +22,10 @@
 }
 
 .navBurger span {
+  width: 30px;
   background: #fff;
   display: block;
   height: 4px;
-  width: 2rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-transform: rotate(1turn);
