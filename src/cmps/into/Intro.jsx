@@ -20,13 +20,15 @@ const Intro = () => {
     <section className={styles.intro}>
       <Scroll direction={"right"} />
       <Scroll direction={"left"} />
-      <Wrapper tag={"h1"}>
-        {
-          <Suspense fallback={<div style={{ minHeight: "93px" }}></div>}>
-            <AnimatedTitle />
-          </Suspense>
-        }
-      </Wrapper>
+      <div className={styles.title}>
+        <Wrapper tag={"h1"}>
+          {
+            <Suspense fallback={<div style={{ minHeight: "93px" }}></div>}>
+              <AnimatedTitle />
+            </Suspense>
+          }
+        </Wrapper>
+      </div>
       {shouldDisplay2 && (
         <div className={styles.p}>
           <Wrapper tag={"p"}>
