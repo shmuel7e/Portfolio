@@ -1,7 +1,10 @@
 .logoStyle {
   user-select: none;
   font-family: Sekiro, sans-serif;
-  color: #c5d7e8;
+  background-image: linear-gradient(60deg,silver, #533310);
+  background-clip: text;
+  padding-bottom: 3px;
+  color: transparent;
   font-size: 6rem;
   animation: rotate 0.2s linear;
   @media (max-width: 700px) {
