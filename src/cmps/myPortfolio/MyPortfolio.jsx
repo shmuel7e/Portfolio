@@ -8,7 +8,6 @@ import mines from "../../assets/images/mines.PNG";
 import soundx from "../../assets/images/soundX.PNG";
 import weather from "../../assets/images/weather.PNG";
 import arduino from "../../assets/images/arduino.PNG";
-import Scroll from "../scroll";
 // const isElementInViewport = (el) => {
 //   var rect = el.getBoundingClientRect();
 //   return (
@@ -26,8 +25,6 @@ import Scroll from "../scroll";
 const MyPortfolio = () => {
   return (
     <section id={"id"} className={styles.container}>
-      <Scroll direction={"right"} bottom={"-1050px"} right={"5px"} />
-      <Scroll direction={"left"} bottom={"-1050px"} left={"5px"} />
       <Wrapper tag={"h2"}>
         <div className={styles.section}>
           <div className={styles.first}>
