@@ -26,8 +26,8 @@ import Scroll from "../scroll";
 const MyPortfolio = () => {
   return (
     <section id={"id"} className={styles.container}>
-      <Scroll direction={"right"} bottom={"-66rem"} right={"5px"} />
-      <Scroll direction={"left"} bottom={"-66rem"} left={"5px"} />
+      <Scroll direction={"right"} bottom={"-1050px"} right={"5px"} />
+      <Scroll direction={"left"} bottom={"-1050px"} left={"5px"} />
       <Wrapper tag={"h2"}>
         <div className={styles.section}>
           <div className={styles.first}>
