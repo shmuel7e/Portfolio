@@ -1,3 +1,5 @@
+$outline: rgba(#fff, 0.4);
+
 .logoStyle {
   user-select: none;
   font-family: Sekiro, sans-serif;
@@ -13,7 +15,6 @@
   }
 }
 
-$outline: rgba(#fff, 0.4);
 
 @keyframes flicker {
   0%{
