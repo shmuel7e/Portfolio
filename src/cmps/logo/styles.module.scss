@@ -16,7 +16,9 @@
 $outline: rgba(#fff, 0.4);
 
 @keyframes flicker {
-  0%,
+  0%{
+    opacity: 0;
+  }
   19.999%,
   22%,
   62.999%,
