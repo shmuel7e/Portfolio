@@ -23,7 +23,7 @@ const Intro = () => {
       <div className={styles.title}>
         <Wrapper tag={"h1"}>
           {
-            <Suspense fallback={<div style={{ minHeight: "93px" }}></div>}>
+            <Suspense fallback={<div style={{ minHeight: "87px" }}></div>}>
               <AnimatedTitle />
             </Suspense>
           }

@@ -8,10 +8,11 @@ const AnimatedTitle = () => (
     <div className={styles.first}>
       <AnimatedLetter letter={"H"} delay={0.1} />
       <AnimatedLetter letter={"i"} delay={0.2} />
-      <AnimatedLetter letter={","} delay={0.3} z={100} />
+      <AnimatedLetter letter={","} delay={0.3} left={-4} z={100} />
     </div>
     <div className={styles.specialContainer}>
-      <AnimatedLetter letter={"I'"} delay={0.4} />
+      <AnimatedLetter letter={"I"} delay={0.4} />
+      <AnimatedLetter letter={"'"} delay={0.5} left={-2} fontFamily={"serif"} />
       <AnimatedLetter letter={"m"} delay={0.6} z={80} />
       <span className={styles.special}>
         <Logo delay={0.45} z={100} />

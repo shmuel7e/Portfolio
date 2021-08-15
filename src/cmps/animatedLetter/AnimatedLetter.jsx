@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 
-const AnimatedLetter = ({ letter, delay, left, z }) => {
+const AnimatedLetter = ({ letter, delay, left, z, fontFamily }) => {
   const [shownState, setShownState] = useState("none");
 
   useEffect(() => {
@@ -13,7 +13,12 @@ const AnimatedLetter = ({ letter, delay, left, z }) => {
   return (
     <div
       className={styles.letter}
-      style={{ display: shownState, marginLeft: `${left}px`, zIndex: z }}
+      style={{
+        display: shownState,
+        marginLeft: `${left}px`,
+        zIndex: z,
+        fontFamily: fontFamily,
+      }}
     >
       {letter}
     </div>
