@@ -2,14 +2,13 @@ import React from "react";
 import styles from "./styles.module.scss";
 import AnimatedLetter from "../animatedLetter";
 import Wrapper from "../wrapper";
-// import myProfile from "../../assets/images/profile.jpg";
 import olyaBridal from "../../assets/images/olyaBridal.PNG";
 import taskIt from "../../assets/images/taskIt.PNG";
 import mines from "../../assets/images/mines.PNG";
 import soundx from "../../assets/images/soundX.PNG";
 import weather from "../../assets/images/weather.PNG";
 import arduino from "../../assets/images/arduino.PNG";
-
+import Scroll from "../scroll";
 // const isElementInViewport = (el) => {
 //   var rect = el.getBoundingClientRect();
 //   return (
@@ -27,6 +26,8 @@ import arduino from "../../assets/images/arduino.PNG";
 const MyPortfolio = () => {
   return (
     <section id={"id"} className={styles.container}>
+      <Scroll direction={"right"} bottom={"-66rem"} right={"5px"} />
+      <Scroll direction={"left"} bottom={"-66rem"} left={"5px"} />
       <Wrapper tag={"h2"}>
         <div className={styles.section}>
           <div className={styles.first}>

@@ -2,8 +2,11 @@ import React from "react";
 import styles from "./styles.module.scss";
 import { ImArrowDown2 } from "react-icons/im";
 
-const Scroll = ({ direction }) => (
-  <section className={`${styles.container}  ${styles[direction]}`}>
+const Scroll = ({ direction, bottom = "-6rem", right, left }) => (
+  <section
+    className={`${styles.container}  ${styles[direction]}`}
+    style={{ bottom: bottom, right: right, left: left }}
+  >
     <div className={styles.txt}>Scroll</div>
     <div className={styles.txt}>Down</div>
     <div className={styles.arrow}>
