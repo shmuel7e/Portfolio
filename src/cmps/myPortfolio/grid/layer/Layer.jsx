@@ -14,7 +14,11 @@ const Layer = ({ className, onClick, current, setCurrent, uniqueKey }) => {
 
   return (
     <div className={styles.imageBox} onClick={handleClick}>
-      <div className={`${styles.imageContainer} ${styles[className]}`}></div>
+      <div
+        className={`${styles.imageContainer} ${styles[className]} ${
+          isCurrent ? styles.zoom : ""
+        }`}
+      ></div>
       <div
         className={`${styles.overlay} ${
           isCurrent ? styles.overlayCurrent : ""

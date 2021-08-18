@@ -3,9 +3,12 @@
   z-index: 1;
   width: 100%;
   height: 180px;
+  background-repeat: no-repeat;
 }
 
 .imageBox {
+  transition: all ease 0.3s;
+  overflow: hidden;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -86,4 +89,9 @@
   0% {
     transform: scale(0.8);
   }
+}
+
+.zoom {
+  transform: scale(1.2);
+  transition: all ease 0.3s;
 }
