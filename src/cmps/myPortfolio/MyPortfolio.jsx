@@ -49,8 +49,8 @@ const MyPortfolio = () => {
         <div className={styles.profileTxt}>
           A small gallery of recent projects.
           <span>
-            These projects mainly focus on javaScript frameworks such as
-            React.js.
+            These projects mainly focus on JavaScript, Frontend - React.Js ,
+            Backend - Node.js.
           </span>
           <span>
             some of the work is freelance and based on single page application.

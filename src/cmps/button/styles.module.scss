@@ -1,6 +1,6 @@
 .button {
   user-select: none;
-  color: silver ;
+  color: #daa265 ;
   letter-spacing: 4px;
   font-family: Sekiro, sans-serif;
   text-decoration: none;
@@ -13,13 +13,13 @@
   line-height: 50px;
   display: block;
   text-align: center;
-  border: 1px solid silver ;
+  border: 1px solid #daa265 ;
   cursor: pointer;
   letter-spacing: 3px;
   font-size: 14px;
   @media (max-width: 500px) {
-    width: 143px;
-    height: 35px;
+    width: 150px;
+    height: 38px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,6 +29,6 @@
 
 .button:hover {
   transition: ease 0.5s all;
-  background: silver ;
+  background: #daa265 ;
   color: black;
 }
