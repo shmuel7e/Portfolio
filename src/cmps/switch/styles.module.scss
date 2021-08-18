@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  z-index: 999 !important;
+  position: fixed;
+  top: 77px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+  outline: none;
+  justify-content: center;
+  right: 0;
+  border-radius: 3px;
+  margin: 3px 10px;
+  width: 50px;
+  font-family: Sekiro, sans-serif;
+  font-size: 1.1rem;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  div {
+    background: none;
+    width: 50%;
+  }
+}
+
+.switch {
+  margin-top: 5px;
+}
+
+.on {
+  div {
+    color: #ff4500;
+  }
+}
+
+.off {
+  div {
+    color: #fd1056;
+  }
+}

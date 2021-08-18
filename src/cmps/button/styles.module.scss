@@ -1,6 +1,6 @@
 .button {
   user-select: none;
-  color: #FF4500 ;
+  color: #ff4500;
   letter-spacing: 4px;
   font-family: Sekiro, sans-serif;
   text-decoration: none;
@@ -13,9 +13,10 @@
   line-height: 50px;
   display: block;
   text-align: center;
-  border: 1px solid #FF4500 ;
+  border: 1px solid #ff4500;
   cursor: pointer;
   letter-spacing: 3px;
+  background: none;
   font-size: 14px;
   @media (max-width: 500px) {
     width: 150px;
@@ -29,6 +30,11 @@
 
 .button:hover {
   transition: ease 0.5s all;
-  background: #FF4500 ;
+  background: #ff4500;
   color: black;
 }
+
+.buttonWHITE {
+  font-weight: bold;
+}
+

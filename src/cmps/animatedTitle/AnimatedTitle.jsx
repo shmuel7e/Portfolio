@@ -3,8 +3,12 @@ import Logo from "../logo";
 import styles from "./styles.module.scss";
 import AnimatedLetter from "../animatedLetter";
 
-const AnimatedTitle = () => (
-  <section className={styles.title}>
+const AnimatedTitle = ({ switchState }) => (
+  <section
+    className={`${styles.title} ${
+      switchState ? styles.titleWHITE : styles.titleBLACK
+    }`}
+  >
     <div className={styles.first}>
       <AnimatedLetter letter={"H"} delay={0.1} />
       <AnimatedLetter letter={"i"} delay={0.2} />

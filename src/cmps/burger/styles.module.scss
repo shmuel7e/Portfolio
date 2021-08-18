@@ -23,7 +23,6 @@
 
 .navBurger span {
   width: 30px;
-  background: #fff;
   display: block;
   height: 4px;
   -webkit-transition: all 0.3s;
@@ -44,4 +43,12 @@
     transform: rotate(-45deg);
     position: absolute;
   }
+}
+
+.navBurgerWHITE span {
+  background: black;
+}
+
+.navBurgerBLACK span {
+  background: #fff;
 }

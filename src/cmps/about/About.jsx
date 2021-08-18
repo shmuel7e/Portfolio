@@ -5,12 +5,16 @@ import myProfile from "../../assets/images/profile.jpg";
 import AnimatedLetter from "../animatedLetter";
 import Scroll from "../scroll";
 
-const About = () => (
+const About = ({ switchState }) => (
   <section className={styles.container}>
-    <Scroll direction={"right"} bottom={"625px"} />
-    <Scroll direction={"left"} bottom={"625px"} />
+    <Scroll direction={"right"} bottom={"625px"} switchState={switchState} />
+    <Scroll direction={"left"} bottom={"625px"} switchState={switchState} />
     <Wrapper tag={"h2"}>
-      <div className={styles.section}>
+      <div
+        className={`${styles.section} ${
+          switchState ? styles.sectionWHITE : styles.sectionBLACK
+        }`}
+      >
         <div className={styles.first}>
           <AnimatedLetter letter={"A"} delay={0.1} />
           <AnimatedLetter letter={"b"} delay={0.2} />
@@ -30,7 +34,11 @@ const About = () => (
       </div>
     </Wrapper>
     <Wrapper tag={"p"}>
-      <div className={styles.profileTxt}>
+      <div
+        className={`${styles.profileTxt} ${
+          switchState ? styles.WHITE : styles.BLACK
+        }`}
+      >
         <span>Experienced Full Stack Web Engineer B.Sc. </span>
         <span> adept in all stages of web development.</span>
         <span>

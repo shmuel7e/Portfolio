@@ -1,6 +1,5 @@
 .title {
   min-height: 280px;
-  color: rgb(255, 255, 255);
   font-size: 6rem;
   font-family: Sekiro, sans-serif;
   box-sizing: border-box;
@@ -42,10 +41,19 @@
   align-items: center;
   margin-left: 12px;
   position: relative;
-  margin-left:31px;
+  margin-left: 31px;
 }
 
 .specialContainer {
   align-items: center;
   display: flex;
+}
+
+.titleWHITE {
+  color: black;
+  font-weight: bold;
+}
+
+.titleBLACK {
+  color: rgb(255, 255, 255);
 }

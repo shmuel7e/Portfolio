@@ -7,7 +7,7 @@ const AnimatedTitle = React.lazy(() => import("../animatedTitle"));
 const SubTitle = React.lazy(() => import("../subtitle"));
 const Button = React.lazy(() => import("../button"));
 
-const Intro = () => {
+const Intro = ({ switchState }) => {
   const [shouldDisplay2, setShouldDisplay2] = useState(false);
   const [shouldDisplay3, setShouldDisplay3] = useState(false);
 
@@ -18,13 +18,13 @@ const Intro = () => {
 
   return (
     <section className={styles.intro}>
-      <Scroll direction={"right"} />
-      <Scroll direction={"left"} />
+      <Scroll direction={"right"} switchState={switchState} />
+      <Scroll direction={"left"} switchState={switchState} />
       <div className={styles.title}>
         <Wrapper tag={"h1"}>
           {
             <Suspense fallback={<div style={{ minHeight: "87px" }}></div>}>
-              <AnimatedTitle />
+              <AnimatedTitle switchState={switchState} />
             </Suspense>
           }
         </Wrapper>
@@ -34,7 +34,7 @@ const Intro = () => {
           <Wrapper tag={"p"}>
             {
               <Suspense fallback={<div style={{ minHeight: "15px" }}></div>}>
-                <SubTitle />
+                <SubTitle switchState={switchState} />
               </Suspense>
             }
           </Wrapper>
@@ -45,7 +45,7 @@ const Intro = () => {
           <Wrapper tag={"button"}>
             {
               <Suspense fallback={<div style={{ minHeight: "35px" }}></div>}>
-                <Button />
+                <Button switchState={switchState} />
               </Suspense>
             }
           </Wrapper>

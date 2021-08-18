@@ -4,9 +4,14 @@ import AnimatedLetter from "../animatedLetter";
 import Wrapper from "../wrapper";
 import Grid from "./grid";
 
-const MyPortfolio = () => {
+const MyPortfolio = ({ switchState }) => {
   return (
-    <section id={"id"} className={styles.container}>
+    <section
+      id={"id"}
+      className={`${styles.container} ${
+        switchState ? styles.containerWHITE : styles.containerBLACK
+      }`}
+    >
       <Wrapper tag={"h2"}>
         <div className={styles.section}>
           <div className={styles.first}>
@@ -28,7 +33,11 @@ const MyPortfolio = () => {
       </Wrapper>
 
       <Wrapper tag={"p"}>
-        <div className={styles.profileTxt}>
+        <div
+          className={`${styles.profileTxt} ${
+            switchState ? styles.profileTxtWHITE : styles.profileTxtBLACK
+          }`}
+        >
           A small gallery of recent projects.
           <span>
             These projects mainly focus on JavaScript, Frontend - React.Js ,

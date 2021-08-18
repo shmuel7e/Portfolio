@@ -1,5 +1,5 @@
 .profile {
-  margin-top:-10px;
+  margin-top: -10px;
   display: flex;
   align-items: center;
   width: 180px;
@@ -38,7 +38,7 @@
 
 .section {
   margin-top: -7px;
-  color: #FF4500;
+  color: #ff4500;
   font-size: 30px;
   font-family: Sekiro, sans-serif;
   display: flex;
@@ -47,4 +47,14 @@
 .container {
   margin-top: 230px;
   position: relative;
+}
+
+.WHITE {
+  color: black;
+  font-family: "La Sans", sans-serif;
+  font-weight: bold;
+}
+
+.sectionWHITE {
+  font-weight: bold;
 }
