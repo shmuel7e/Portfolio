@@ -12,3 +12,7 @@ a {
   outline: none;
   user-select: none;
 }
+
+* {
+  transition: color ease 0.2s;
+}
