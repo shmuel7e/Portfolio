@@ -16,7 +16,7 @@ const Layer = ({ className, onClick, current, setCurrent, uniqueKey }) => {
     <div className={styles.imageBox} onClick={handleClick}>
       <div
         className={`${styles.imageContainer} ${styles[className]} ${
-          isCurrent ? styles.zoom : ""
+          isCurrent ? styles.zoom : styles.zoomOut
         }`}
       ></div>
       <div
