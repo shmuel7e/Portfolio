@@ -33,15 +33,3 @@
   background: #ff4500;
   color: black;
 }
-
-.buttonWHITE {
-  font-weight: bold;
-  @media (max-width: 500px) {
-    width: 150px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 9px;
-  }
-}
