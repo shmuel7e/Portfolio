@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useCallback, useMemo } from "react";
 import styles from "./styles.module.scss";
 
-const Layer = () => (
-  <div className={styles.imageBox}>
-    <div className={styles.olyaBridal}></div>
-    <div className={styles.overlay}></div>
-    <div className={styles.content}>
-      <p>View Project </p>
+const Layer = ({ className, onClick, current, setCurrent, uniqueKey }) => {
+  const isCurrent = useMemo(() => current === uniqueKey, [current, uniqueKey]);
+
+  const handleClick = useCallback(() => {
+    if (isCurrent) {
+      onClick();
+    } else {
+      setCurrent(uniqueKey);
+    }
+  }, [setCurrent, isCurrent, uniqueKey, onClick]);
+
+  return (
+    <div className={styles.imageBox} onClick={handleClick}>
+      <div className={`${styles.imageContainer} ${styles[className]}`}></div>
+      <div
+        className={`${styles.overlay} ${
+          isCurrent ? styles.overlayCurrent : ""
+        }`}
+      ></div>
+      {isCurrent && (
+        <div className={`${styles.content}`} onClick={onClick}>
+          <p>View Project </p>
+        </div>
+      )}
     </div>
-  </div>
-);
+  );
+};
 export default React.memo(Layer);
