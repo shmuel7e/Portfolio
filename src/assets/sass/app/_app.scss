@@ -1,6 +1,7 @@
 body {
   background: #1d1d1d;
   overflow-x: hidden !important;
+  transition: background ease 0.5s;
 }
 
 .App {
@@ -11,8 +12,4 @@ a {
   text-decoration: none;
   outline: none;
   user-select: none;
-}
-
-* {
-  transition: color ease 0.2s;
 }
