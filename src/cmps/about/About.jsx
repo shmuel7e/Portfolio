@@ -17,15 +17,15 @@ const About = ({ switchState }) => (
         }`}
       >
         <div className={styles.first}>
-          <AnimatedLetter letter={"A"} delay={0.1} />
-          <AnimatedLetter letter={"b"} delay={0.2} />
-          <AnimatedLetter letter={"o"} delay={0.3} />
-          <AnimatedLetter letter={"u"} delay={0.4} />
-          <AnimatedLetter letter={"t"} delay={0.5} />
+          <AnimatedLetter switchState={switchState} letter={"A"} delay={0.1} />
+          <AnimatedLetter switchState={switchState} letter={"b"} delay={0.2} />
+          <AnimatedLetter switchState={switchState} letter={"o"} delay={0.3} />
+          <AnimatedLetter switchState={switchState} letter={"u"} delay={0.4} />
+          <AnimatedLetter switchState={switchState} letter={"t"} delay={0.5} />
         </div>
         <div className={styles.second}>
-          <AnimatedLetter letter={"M"} delay={0.6} />
-          <AnimatedLetter letter={"e"} delay={0.7} />
+          <AnimatedLetter switchState={switchState} letter={"M"} delay={0.6} />
+          <AnimatedLetter switchState={switchState} letter={"e"} delay={0.7} />
         </div>
       </div>
     </Wrapper>

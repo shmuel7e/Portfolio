@@ -15,19 +15,19 @@ const MyPortfolio = ({ switchState }) => {
       <Wrapper tag={"h2"}>
         <div className={`${styles.section}`}>
           <div className={styles.first}>
-            <AnimatedLetter letter={"M"} delay={0.1} />
-            <AnimatedLetter letter={"y"} delay={0.2} />
+            <AnimatedLetter switchState={switchState} letter={"M"} delay={0.1} />
+            <AnimatedLetter switchState={switchState} letter={"y"} delay={0.2} />
           </div>
           <div className={styles.second}>
-            <AnimatedLetter letter={"P"} delay={0.3} />
-            <AnimatedLetter letter={"o"} delay={0.4} />
-            <AnimatedLetter letter={"r"} delay={0.5} />
-            <AnimatedLetter letter={"t"} delay={0.6} />
-            <AnimatedLetter letter={"f"} delay={0.7} />
-            <AnimatedLetter letter={"o"} delay={0.8} />
-            <AnimatedLetter letter={"l"} delay={0.9} />
-            <AnimatedLetter letter={"i"} delay={1} />
-            <AnimatedLetter letter={"o"} delay={1.1} />
+            <AnimatedLetter switchState={switchState} letter={"P"} delay={0.3} />
+            <AnimatedLetter switchState={switchState} letter={"o"} delay={0.4} />
+            <AnimatedLetter switchState={switchState} letter={"r"} delay={0.5} />
+            <AnimatedLetter switchState={switchState} letter={"t"} delay={0.6} />
+            <AnimatedLetter switchState={switchState} letter={"f"} delay={0.7} />
+            <AnimatedLetter switchState={switchState} letter={"o"} delay={0.8} />
+            <AnimatedLetter switchState={switchState} letter={"l"} delay={0.9} />
+            <AnimatedLetter switchState={switchState} letter={"i"} delay={1} />
+            <AnimatedLetter switchState={switchState} letter={"o"} delay={1.1} />
           </div>
         </div>
       </Wrapper>
