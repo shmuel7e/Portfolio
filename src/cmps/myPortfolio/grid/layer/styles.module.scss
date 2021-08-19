@@ -16,7 +16,7 @@
   width: 50%;
   max-width: 360px;
   max-height: 360px;
-  background: lime;
+  background: none;
   position: relative;
 }
 
@@ -95,7 +95,7 @@
   transition: all ease 0.3s;
 }
 
-.zoomOut{
-    transform: scale(1);
-    transition: all ease 0.3s;
+.zoomOut {
+  transform: scale(1);
+  transition: all ease 0.3s;
 }
