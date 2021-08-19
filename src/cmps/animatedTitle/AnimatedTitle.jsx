@@ -19,7 +19,7 @@ const AnimatedTitle = ({ switchState }) => (
       <AnimatedLetter letter={"'"} delay={0.5} left={-2} fontFamily={"serif"} />
       <AnimatedLetter letter={"m"} delay={0.6} z={80} />
       <span className={styles.special}>
-        <Logo delay={0.45} z={100} />
+        <Logo switchState={switchState} delay={0.45} z={100} />
         <AnimatedLetter letter={"h"} delay={0.8} />
         <AnimatedLetter letter={"m"} delay={0.9} />
         <AnimatedLetter letter={"u"} delay={1} />

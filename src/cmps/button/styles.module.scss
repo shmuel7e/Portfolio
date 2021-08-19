@@ -33,3 +33,21 @@
   background: #ff4500;
   color: black;
 }
+
+.buttonWHITE {
+  color: #fd1056;
+  border: 1px solid #fd1056;
+}
+
+.buttonBLACK {
+  color: #ff4500;
+  border: 1px solid #ff4500;
+}
+
+.buttonWHITE:hover {
+  background: #fd1056;
+}
+
+.buttonBLACK:hover {
+  background: #ff4500;
+}

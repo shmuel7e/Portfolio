@@ -13,7 +13,7 @@ const MyPortfolio = ({ switchState }) => {
       }`}
     >
       <Wrapper tag={"h2"}>
-        <div className={styles.section}>
+        <div className={`${styles.section}`}>
           <div className={styles.first}>
             <AnimatedLetter letter={"M"} delay={0.1} />
             <AnimatedLetter letter={"y"} delay={0.2} />
@@ -35,7 +35,7 @@ const MyPortfolio = ({ switchState }) => {
       <Wrapper tag={"p"}>
         <div
           className={`${styles.profileTxt} ${
-            switchState ? styles.profileTxtWHITE : styles.profileTxtBLACK
+            switchState ? styles.profileTxtBLACK : styles.profileTxtWHITE
           }`}
         >
           A small gallery of recent projects.
@@ -49,7 +49,13 @@ const MyPortfolio = ({ switchState }) => {
           <span className={styles.subTxt}>
             interested to see some more? Visit{" "}
             <a href={"https://github.com/shmuel7e"}>
-              <span>my work</span>
+              <span
+                className={
+                  switchState ? styles.myWorkBLACK : styles.myWorkWHITE
+                }
+              >
+                my work
+              </span>
             </a>{" "}
             page.
           </span>

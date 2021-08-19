@@ -1,5 +1,4 @@
 .container {
-  color: #ff4500;
   font-size: 4rem;
   font-family: Sekiro, sans-serif;
 
@@ -38,13 +37,27 @@
 
 .subTxt {
   span {
-    color: #ff4500;
     outline: none;
     user-select: none;
   }
 }
 
+.containerWHITE {
+  color: #fd1056;
+}
 
-.profileTxtWHITE {
+.containerBLACK {
+  color: #ff4500;
+}
+
+.profileTxtBLACK {
   color: black;
+}
+
+.myWorkBLACK{
+  color: #fd1056 !important;
+}
+
+.myWorkWHITE{
+  color: #ff4500 !important;
 }

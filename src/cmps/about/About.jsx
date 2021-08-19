@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import Wrapper from "../wrapper";
 import myProfile from "../../assets/images/profile.jpg";
+import myProfileX from "../../assets/images/profileX.jpg";
 import AnimatedLetter from "../animatedLetter";
 import Scroll from "../scroll";
 
@@ -29,9 +30,15 @@ const About = ({ switchState }) => (
       </div>
     </Wrapper>
     <Wrapper tag={"img"}>
-      <div className={styles.profile}>
-        <img src={myProfile} alt=""></img>
-      </div>
+      {switchState ? (
+        <div className={styles.profile}>
+          <img src={myProfileX} alt=""></img>
+        </div>
+      ) : (
+        <div className={styles.profile}>
+          <img src={myProfile} alt=""></img>
+        </div>
+      )}
     </Wrapper>
     <Wrapper tag={"p"}>
       <div

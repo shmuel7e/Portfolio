@@ -13,7 +13,7 @@ const Switch = ({ switchState, setSwitchState }) => {
 
   const handleColors = useCallback(() => {
     switchState
-      ? (document.body.style.backgroundColor = "rgb(216 216 216)")
+      ? (document.body.style.backgroundColor = "rgb(255 255 255)")
       : (document.body.style.backgroundColor = "#1d1d1d");
   }, [switchState]);
 

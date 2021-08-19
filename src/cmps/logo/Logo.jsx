@@ -1,9 +1,17 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 
-const LogoImage = () => <div className={styles.logoStyle}>S</div>;
+const LogoImage = ({ switchState }) => (
+  <div
+    className={`${styles.logoStyle} ${
+      switchState ? styles.logoStyleBLACK : styles.logoStyleWHITE
+    }`}
+  >
+    S
+  </div>
+);
 
-const Logo = ({ delay, theme = "default", z }) => {
+const Logo = ({ delay, z, switchState }) => {
   const [isShown, setShown] = useState("none");
   useEffect(() => {
     setTimeout(() => {
@@ -12,7 +20,7 @@ const Logo = ({ delay, theme = "default", z }) => {
   }, [delay]);
   return (
     <span style={{ display: isShown, zIndex: z }}>
-      {theme === "default" ? <LogoImage /> : <LogoImage />}
+      {<LogoImage switchState={switchState} />}
     </span>
   );
 };
