@@ -17,13 +17,29 @@
 }
 
 .inside {
+  height: calc(100% - 204px);
   z-index: 999;
-  margin-top: 55px;
-  height: 100%;
+  div:first-child {
+    border-top: 1px solid #282828;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    height: 51px;
+    border-bottom: 1px solid #282828;
+    a {
+      user-select: none !important;
+      color: #909096;
+    }
+  }
 }
 
 .insideWHITE {
-  background-color: rgb(131, 126, 126);
+  background-color: #060404;
 }
 
 .insideBLACK {
@@ -47,6 +63,7 @@
 }
 
 .log {
+  margin-bottom: 55px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -73,4 +90,11 @@
 .logoStyle {
   font-size: 4rem;
   margin-top: 35px;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
 }
