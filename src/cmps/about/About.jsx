@@ -29,17 +29,19 @@ const About = ({ switchState }) => (
         </div>
       </div>
     </Wrapper>
-    <Wrapper tag={"img"}>
-      {switchState ? (
-        <div className={styles.profile}>
-          <img src={myProfileX} alt=""></img>
-        </div>
-      ) : (
-        <div className={styles.profile}>
-          <img src={myProfile} alt=""></img>
-        </div>
-      )}
-    </Wrapper>
+    <div className={styles.contact}>
+      <Wrapper tag={"img"}>
+        {switchState ? (
+          <div className={styles.profile}>
+            <img src={myProfileX} alt=""></img>
+          </div>
+        ) : (
+          <div className={styles.profile}>
+            <img src={myProfile} alt=""></img>
+          </div>
+        )}
+      </Wrapper>
+    </div>
     <Wrapper tag={"p"}>
       <div
         className={`${styles.profileTxt} ${

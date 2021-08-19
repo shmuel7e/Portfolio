@@ -6,15 +6,21 @@ import MyPortfolio from "../cmps/myPortfolio";
 import About from "../cmps/about";
 import Burger from "../cmps/burger";
 import Switch from "../cmps/switch";
+import Popup from "../cmps/popup";
+
 const Intro = React.lazy(() => import("../cmps/into"));
 
 const Home = () => {
   const [switchState, setSwitchState] = useState(
     JSON.parse(localStorage.getItem("color")) || false
   );
+
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section className={styles.home}>
-      <Burger switchState={switchState} />
+      <Popup switchState={switchState} isOpen={isOpen} />
+      <Burger switchState={switchState} setIsOpen={setIsOpen} />
       <Switch switchState={switchState} setSwitchState={setSwitchState} />
       <Wrapper tag={"html"}>
         <div className={styles.html}>

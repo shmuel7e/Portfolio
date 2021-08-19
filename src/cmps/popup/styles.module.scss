@@ -1,0 +1,76 @@
+.popup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  z-index: 998;
+}
+
+.popupWHITE {
+  background: white;
+}
+
+.popupBLACK {
+  background: black;
+}
+
+.inside {
+  z-index: 999;
+  margin-top: 55px;
+  height: 100%;
+}
+
+.insideWHITE {
+  background-color: rgb(131, 126, 126);
+}
+
+.insideBLACK {
+  background-color: rgb(29, 29, 29);
+}
+
+.logBLACK {
+  color: white;
+}
+
+.logWHITE {
+  color: black;
+}
+
+.title {
+  font-family: Sekiro, sans-serif;
+}
+
+.paragraph {
+  font-family: "La Sans", sans-serif;
+}
+
+.log {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  span {
+    font-size: 0.8rem;
+  }
+  h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+  }
+}
+
+.logoStyleBLACK {
+  color: #2255dc;
+}
+
+.logoStyleWHITE {
+  color: #ff4500;
+}
+
+.logoStyle {
+  font-size: 4rem;
+  margin-top: 35px;
+}
