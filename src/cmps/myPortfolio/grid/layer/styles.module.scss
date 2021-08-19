@@ -40,7 +40,6 @@
   text-align: center;
   z-index: 3;
   position: absolute;
-  background: #ff4500;
   width: 90px;
   height: 90px;
   border-radius: 100%;
@@ -98,4 +97,12 @@
 .zoomOut {
   transform: scale(1);
   transition: all ease 0.3s;
+}
+
+.contentWHITE {
+  background: #2255dc;
+}
+
+.contentBLACK {
+  background: #ff4500;
 }

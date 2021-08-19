@@ -62,7 +62,7 @@ const MyPortfolio = ({ switchState }) => {
         </div>
       </Wrapper>
       <Wrapper tag={"section"}>
-        <Grid />
+        <Grid switchState={switchState}/>
       </Wrapper>
     </section>
   );

@@ -1,7 +1,14 @@
 import React, { useCallback, useMemo } from "react";
 import styles from "./styles.module.scss";
 
-const Layer = ({ className, onClick, current, setCurrent, uniqueKey }) => {
+const Layer = ({
+  className,
+  onClick,
+  current,
+  setCurrent,
+  uniqueKey,
+  switchState,
+}) => {
   const isCurrent = useMemo(() => current === uniqueKey, [current, uniqueKey]);
 
   const handleClick = useCallback(() => {
@@ -25,7 +32,12 @@ const Layer = ({ className, onClick, current, setCurrent, uniqueKey }) => {
         }`}
       ></div>
       {isCurrent && (
-        <div className={`${styles.content}`} onClick={onClick}>
+        <div
+          className={`${styles.content} ${
+            switchState ? styles.contentWHITE : styles.contentBLACK
+          }`}
+          onClick={onClick}
+        >
           <p>View Project </p>
         </div>
       )}

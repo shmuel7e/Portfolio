@@ -37,7 +37,7 @@ const layers = [
   },
 ];
 
-const Grid = () => {
+const Grid = ({ switchState }) => {
   const [current, setCurrent] = useState(null);
   return (
     <section className={styles.grid}>
@@ -49,6 +49,7 @@ const Grid = () => {
           current={current}
           setCurrent={setCurrent}
           uniqueKey={layer.key}
+          switchState={switchState}
         />
       ))}
     </section>
