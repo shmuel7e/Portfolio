@@ -22,27 +22,29 @@ const Home = () => {
       <Popup switchState={switchState} isOpen={isOpen} />
       <Burger switchState={switchState} setIsOpen={setIsOpen} />
       <Switch switchState={switchState} setSwitchState={setSwitchState} />
-      <Wrapper tag={"html"}>
-        <div className={styles.html}>
-          <Wrapper tag={"body"}>
-            {
-              <div className={styles.body}>
-                <Suspense
-                  fallback={
-                    <div className={styles.spinner}>
-                      <Spinner />
-                    </div>
-                  }
-                >
-                  <Intro switchState={switchState} />
-                  <MyPortfolio switchState={switchState} />
-                  <About switchState={switchState} />
-                </Suspense>
-              </div>
-            }
-          </Wrapper>
-        </div>
-      </Wrapper>
+      {!isOpen && (
+        <Wrapper tag={"html"}>
+          <div className={styles.html}>
+            <Wrapper tag={"body"}>
+              {
+                <div className={styles.body}>
+                  <Suspense
+                    fallback={
+                      <div className={styles.spinner}>
+                        <Spinner />
+                      </div>
+                    }
+                  >
+                    <Intro switchState={switchState} />
+                    <MyPortfolio switchState={switchState} />
+                    <About switchState={switchState} />
+                  </Suspense>
+                </div>
+              }
+            </Wrapper>
+          </div>
+        </Wrapper>
+      )}
     </section>
   );
 };
